@@ -40,7 +40,7 @@ img {
 }
 
 ul {
-    margin-inline: 3rem;
+    margin-inline: 2rem;
     max-width: 100%;
 }
 
@@ -91,7 +91,7 @@ li {
 
 @media only screen and (max-width: 426px) {
     .equal {
-        gap: 1rem;
+        gap: 1.5rem;
     }
 }
 
