@@ -8,26 +8,19 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="shortcut icon" href="./assets/images/Headphone_Clipart_PNG_Images__Headphone_Vector_Cartoon_Illustration__Headphone__Music__Object_PNG_Image_For_Free_Download-removebg-preview.ico" type="image/x-icon">
 </head>
-<body>
+<!-- <body>
     <main>
-        <header>
-            <div class="track-img">
-                <img src="./assets/images/blck _3.jpg" alt="sad">
-            </div>
-            <div class="track-name">
-                <h1>Indie Pop</h1>
-                <p>(To be honest I don't know if all of them are indie.)</p>
-            </div>
-        </header>
+
         <section>
             <ul>
                 <li>
                     <div class="equal">
                         <p>1.</p>
-                        <div class="icons">
-                            <i class='play bx bx-play'></i>
+                        <div class="icons" >
+                            <i class='play bx bx-play' id="play"></i>
                             <i class='pause bx bx-pause'></i>
                         </div>
+                        <audio src="./assets/songs/spotifydown.com - Electric U.mp3" id="song1" preload="auto"></audio>
                         <p class="song">Electric U</p>
                     </div>
                     <p class="duration">2:51</p>
@@ -89,7 +82,7 @@
                 </li>
                 <li>
                     <div class="equal">
-                        <p>7.</p>
+                        <p style="margin-right: 2.8px;">7.</p>
                         <div class="icons">
                             <i class='play bx bx-play'></i>
                             <i class='pause bx bx-pause'></i>
@@ -112,5 +105,120 @@
             </ul>
         </section>
     </main>
-</body>
+    <script src="script.js"></script>
+</body> -->
+<body>
+    <main>
+        <header>
+            <div class="track-img">
+                <img src="./assets/images/blck _3.jpg" alt="sad">
+            </div>
+            <div class="track-name">
+                <h1>Indie Pop</h1>
+                <p>(To be honest I don't know if all of them are indie.)</p>
+            </div>
+        </header>
+        <section>
+            <ul>
+                <li>
+                    <div class="equal">
+                        <p>1.</p>
+                        <div class="audio-container icons" style="margin-left: 2px;">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Electric U.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Electric U</p>
+                    </div>
+                    <p class="duration">2:51</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p>2.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Honey Whiskey.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Honey Whiskey</p>
+                    </div>
+                    <p class="duration">3:11</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p>3.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Moonlight.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Moonlight</p>
+                    </div>
+                    <p class="duration">3:07</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p>4.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Somebody Else.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Somebody Else</p>
+                    </div>
+                    <p class="duration">5:47</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p>5.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs//spotifydown.com - Instant Crush (feat. Julian Casablancas).mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Instant Crush</p>
+                    </div>
+                    <p class="duration">5:37</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p>6.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Love Again.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Love Again</p>
+                    </div>
+                    <p class="duration">4:03</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p style="margin-right: 2.8px;">7.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Carnival of Rust.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Carnival Of Rust</p>
+                    </div>
+                    <p class="duration">4:22</p>
+                </li>
+                <li>
+                    <div class="equal">
+                        <p>8.</p>
+                        <div class="audio-container icons">
+                            <i class="playIcon bx bx-play play"></i>
+                            <i class="pauseIcon bx bx-pause pause"></i>
+                            <audio class="audioPlayer" src="./assets/songs/spotifydown.com - Compromised.mp3" preload="auto"></audio>
+                        </div>
+                        <p class="song">Compromised</p>
+                    </div>
+                    <p class="duration">3:46</p>
+                </li>
+            </ul>
+        </section>
+    </main>  
+    <script src="script.js"></script>
+  </body>
 </html>
